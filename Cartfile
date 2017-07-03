@@ -1,0 +1,3 @@
+github "freshOS/Arrow"
+github "Alamofire/Alamofire" ~> 4.4
+github "Alamofire/AlamofireImage" ~> 3.1

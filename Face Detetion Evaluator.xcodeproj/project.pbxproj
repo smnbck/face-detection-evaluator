@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC23621E1F0A69FD00E5A2E4 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23621C1F0A69FD00E5A2E4 /* ApiKeys.swift */; };
+		EC23621F1F0A69FD00E5A2E4 /* TestImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23621D1F0A69FD00E5A2E4 /* TestImages.swift */; };
+		EC2E843F1EFC7874006AD51C /* MicrosoftFaceDetectionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E843E1EFC7873006AD51C /* MicrosoftFaceDetectionAPI.swift */; };
+		EC2E84411EFC80AA006AD51C /* ApiDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E84401EFC80AA006AD51C /* ApiDescription.swift */; };
+		EC2E84431EFD204B006AD51C /* MicrosoftFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E84421EFD204B006AD51C /* MicrosoftFace.swift */; };
+		EC58A7991EFEA3E40090F186 /* KairosRecognitionFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A7981EFEA3E40090F186 /* KairosRecognitionFace.swift */; };
+		EC58A79B1EFEA5690090F186 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A79A1EFEA5690090F186 /* Gender.swift */; };
+		EC58A79F1F0062070090F186 /* KairosEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A79E1F0062070090F186 /* KairosEmotions.swift */; };
+		EC58A7A11F0062B10090F186 /* MicrosoftEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A7A01F0062B10090F186 /* MicrosoftEmotions.swift */; };
+		EC58A7A31F0063D10090F186 /* MicrosoftHairColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A7A21F0063D10090F186 /* MicrosoftHairColor.swift */; };
+		EC58A7A51F0066D00090F186 /* MicrosoftAccessorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A7A41F0066D00090F186 /* MicrosoftAccessorie.swift */; };
+		EC58A7A71F00FB640090F186 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58A7A61F00FB640090F186 /* ImageURL.swift */; };
+		EC58A7A91F0106550090F186 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC58A7A81F0106550090F186 /* AlamofireImage.framework */; };
+		EC58A7AA1F0106550090F186 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC58A7A81F0106550090F186 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC5954CE1F02E1A600DD79B0 /* SelectionDetailsViewController+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5954CD1F02E1A600DD79B0 /* SelectionDetailsViewController+Timer.swift */; };
+		EC7B88291EF8926B00E86AF6 /* FacePlusPlusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B88281EF8926B00E86AF6 /* FacePlusPlusAPI.swift */; };
+		EC7B882B1EF8972E00E86AF6 /* FacePlusPlusFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B882A1EF8972E00E86AF6 /* FacePlusPlusFace.swift */; };
+		ECCEC3721EF17E6900E8DEA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCEC3711EF17E6900E8DEA4 /* AppDelegate.swift */; };
+		ECCEC3741EF17E6900E8DEA4 /* SelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCEC3731EF17E6900E8DEA4 /* SelectionTableViewController.swift */; };
+		ECCEC3771EF17E6900E8DEA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCEC3751EF17E6900E8DEA4 /* Main.storyboard */; };
+		ECCEC3791EF17E6900E8DEA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCEC3781EF17E6900E8DEA4 /* Assets.xcassets */; };
+		ECCEC37C1EF17E6900E8DEA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCEC37A1EF17E6900E8DEA4 /* LaunchScreen.storyboard */; };
+		ECCEC38B1EF180BA00E8DEA4 /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCEC38A1EF180BA00E8DEA4 /* SelectionTableViewCell.swift */; };
+		ECD15B6F1F03289F00469ADD /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD15B6E1F03289F00469ADD /* TestResult.swift */; };
+		ECD15B741F032E2700469ADD /* KairosRecognitionTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD15B701F032E2700469ADD /* KairosRecognitionTestResult.swift */; };
+		ECD15B751F032E2700469ADD /* FacePlusPlusTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD15B711F032E2700469ADD /* FacePlusPlusTestResult.swift */; };
+		ECD15B761F032E2700469ADD /* MicrosoftTestResult Kopie 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD15B721F032E2700469ADD /* MicrosoftTestResult Kopie 4.swift */; };
+		ECD15B771F032E2700469ADD /* KairosEmotionsTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD15B731F032E2700469ADD /* KairosEmotionsTestResult.swift */; };
+		ECD15B791F0332CA00469ADD /* ResultsDetailsTableViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD15B781F0332CA00469ADD /* ResultsDetailsTableViewController+CellConfiguration.swift */; };
+		ECFDA2101EF2D8F700E6718E /* SelectionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA20F1EF2D8F700E6718E /* SelectionDetailsViewController.swift */; };
+		ECFDA2181EF2E27100E6718E /* ResultsDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA2171EF2E27100E6718E /* ResultsDetailsTableViewCell.swift */; };
+		ECFDA21A1EF2E28000E6718E /* ResultsDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA2191EF2E28000E6718E /* ResultsDetailsTableViewController.swift */; };
+		ECFDA21E1EF3D2D100E6718E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFDA21C1EF3D2D100E6718E /* Alamofire.framework */; };
+		ECFDA21F1EF3D2D100E6718E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECFDA21C1EF3D2D100E6718E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECFDA2201EF3D2D100E6718E /* Arrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFDA21D1EF3D2D100E6718E /* Arrow.framework */; };
+		ECFDA2211EF3D2D100E6718E /* Arrow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECFDA21D1EF3D2D100E6718E /* Arrow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECFDA2241EF3D9EB00E6718E /* KairosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA2231EF3D9EB00E6718E /* KairosAPI.swift */; };
+		ECFDA2271EF3DC3500E6718E /* Emotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA2261EF3DC3500E6718E /* Emotions.swift */; };
+		ECFDA2291EF3E5CD00E6718E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA2281EF3E5CD00E6718E /* Person.swift */; };
+		ECFDA22B1EF3E70D00E6718E /* KairosEmotionsFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA22A1EF3E70D00E6718E /* KairosEmotionsFace.swift */; };
+		ECFDA22D1EF3E92700E6718E /* KairosTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDA22C1EF3E92700E6718E /* KairosTracking.swift */; };
+		ECFDA22F1EF3F8DC00E6718E /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECFDA22E1EF3F8DB00E6718E /* image1.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECFDA2221EF3D2D200E6718E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC58A7AA1F0106550090F186 /* AlamofireImage.framework in Embed Frameworks */,
+				ECFDA2211EF3D2D100E6718E /* Arrow.framework in Embed Frameworks */,
+				ECFDA21F1EF3D2D100E6718E /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC23621C1F0A69FD00E5A2E4 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = SOURCE_ROOT; };
+		EC23621D1F0A69FD00E5A2E4 /* TestImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestImages.swift; sourceTree = SOURCE_ROOT; };
+		EC2E843E1EFC7873006AD51C /* MicrosoftFaceDetectionAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftFaceDetectionAPI.swift; sourceTree = "<group>"; };
+		EC2E84401EFC80AA006AD51C /* ApiDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDescription.swift; sourceTree = "<group>"; };
+		EC2E84421EFD204B006AD51C /* MicrosoftFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftFace.swift; sourceTree = "<group>"; };
+		EC58A7981EFEA3E40090F186 /* KairosRecognitionFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosRecognitionFace.swift; sourceTree = "<group>"; };
+		EC58A79A1EFEA5690090F186 /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		EC58A79E1F0062070090F186 /* KairosEmotions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosEmotions.swift; sourceTree = "<group>"; };
+		EC58A7A01F0062B10090F186 /* MicrosoftEmotions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftEmotions.swift; sourceTree = "<group>"; };
+		EC58A7A21F0063D10090F186 /* MicrosoftHairColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftHairColor.swift; sourceTree = "<group>"; };
+		EC58A7A41F0066D00090F186 /* MicrosoftAccessorie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftAccessorie.swift; sourceTree = "<group>"; };
+		EC58A7A61F00FB640090F186 /* ImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
+		EC58A7A81F0106550090F186 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		EC5954CD1F02E1A600DD79B0 /* SelectionDetailsViewController+Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectionDetailsViewController+Timer.swift"; sourceTree = "<group>"; };
+		EC7B88281EF8926B00E86AF6 /* FacePlusPlusAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacePlusPlusAPI.swift; sourceTree = "<group>"; };
+		EC7B882A1EF8972E00E86AF6 /* FacePlusPlusFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacePlusPlusFace.swift; sourceTree = "<group>"; };
+		ECCEC36E1EF17E6900E8DEA4 /* Face Detetion Evaluator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Detetion Evaluator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCEC3711EF17E6900E8DEA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECCEC3731EF17E6900E8DEA4 /* SelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewController.swift; sourceTree = "<group>"; };
+		ECCEC3761EF17E6900E8DEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECCEC3781EF17E6900E8DEA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECCEC37B1EF17E6900E8DEA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECCEC37D1EF17E6900E8DEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCEC38A1EF180BA00E8DEA4 /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
+		ECD15B6E1F03289F00469ADD /* TestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		ECD15B701F032E2700469ADD /* KairosRecognitionTestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosRecognitionTestResult.swift; sourceTree = "<group>"; };
+		ECD15B711F032E2700469ADD /* FacePlusPlusTestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacePlusPlusTestResult.swift; sourceTree = "<group>"; };
+		ECD15B721F032E2700469ADD /* MicrosoftTestResult Kopie 4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MicrosoftTestResult Kopie 4.swift"; sourceTree = "<group>"; };
+		ECD15B731F032E2700469ADD /* KairosEmotionsTestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosEmotionsTestResult.swift; sourceTree = "<group>"; };
+		ECD15B781F0332CA00469ADD /* ResultsDetailsTableViewController+CellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ResultsDetailsTableViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
+		ECFDA20F1EF2D8F700E6718E /* SelectionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionDetailsViewController.swift; sourceTree = "<group>"; };
+		ECFDA2171EF2E27100E6718E /* ResultsDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		ECFDA2191EF2E28000E6718E /* ResultsDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsDetailsTableViewController.swift; sourceTree = "<group>"; };
+		ECFDA21C1EF3D2D100E6718E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ECFDA21D1EF3D2D100E6718E /* Arrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arrow.framework; path = Carthage/Build/iOS/Arrow.framework; sourceTree = "<group>"; };
+		ECFDA2231EF3D9EB00E6718E /* KairosAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosAPI.swift; sourceTree = "<group>"; };
+		ECFDA2261EF3DC3500E6718E /* Emotions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotions.swift; sourceTree = "<group>"; };
+		ECFDA2281EF3E5CD00E6718E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		ECFDA22A1EF3E70D00E6718E /* KairosEmotionsFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosEmotionsFace.swift; sourceTree = "<group>"; };
+		ECFDA22C1EF3E92700E6718E /* KairosTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KairosTracking.swift; sourceTree = "<group>"; };
+		ECFDA22E1EF3F8DB00E6718E /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECCEC36B1EF17E6900E8DEA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC58A7A91F0106550090F186 /* AlamofireImage.framework in Frameworks */,
+				ECFDA2201EF3D2D100E6718E /* Arrow.framework in Frameworks */,
+				ECFDA21E1EF3D2D100E6718E /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC2E843D1EFC75A4006AD51C /* Microsoft Face API */ = {
+			isa = PBXGroup;
+			children = (
+				EC2E843E1EFC7873006AD51C /* MicrosoftFaceDetectionAPI.swift */,
+				EC2E84421EFD204B006AD51C /* MicrosoftFace.swift */,
+				EC58A7A01F0062B10090F186 /* MicrosoftEmotions.swift */,
+				EC58A7A21F0063D10090F186 /* MicrosoftHairColor.swift */,
+				EC58A7A41F0066D00090F186 /* MicrosoftAccessorie.swift */,
+			);
+			name = "Microsoft Face API";
+			sourceTree = "<group>";
+		};
+		EC7B88271EF8925200E86AF6 /* Face++ */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B88281EF8926B00E86AF6 /* FacePlusPlusAPI.swift */,
+				EC7B882A1EF8972E00E86AF6 /* FacePlusPlusFace.swift */,
+			);
+			name = "Face++";
+			sourceTree = "<group>";
+		};
+		ECCEC3651EF17E6900E8DEA4 = {
+			isa = PBXGroup;
+			children = (
+				ECCEC3701EF17E6900E8DEA4 /* Face Detetion Evaluator */,
+				ECCEC36F1EF17E6900E8DEA4 /* Products */,
+				ECFDA21B1EF3D2A100E6718E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECCEC36F1EF17E6900E8DEA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECCEC36E1EF17E6900E8DEA4 /* Face Detetion Evaluator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECCEC3701EF17E6900E8DEA4 /* Face Detetion Evaluator */ = {
+			isa = PBXGroup;
+			children = (
+				ECCEC3831EF17E7C00E8DEA4 /* Code */,
+				ECCEC3841EF17E8E00E8DEA4 /* Storyboards */,
+				ECCEC3851EF17EA100E8DEA4 /* Assets */,
+				ECCEC3861EF17EAA00E8DEA4 /* Supporting Files */,
+			);
+			path = "Face Detetion Evaluator";
+			sourceTree = "<group>";
+		};
+		ECCEC3831EF17E7C00E8DEA4 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				ECCEC3711EF17E6900E8DEA4 /* AppDelegate.swift */,
+				ECCEC3891EF17F0600E8DEA4 /* Selection */,
+				ECFDA20E1EF2D8DF00E6718E /* SelectionDetails */,
+				ECFDA2121EF2E1F000E6718E /* ResultsDetails */,
+				ECCEC3871EF17EF100E8DEA4 /* Kairos */,
+				EC7B88271EF8925200E86AF6 /* Face++ */,
+				EC2E843D1EFC75A4006AD51C /* Microsoft Face API */,
+				ECFDA2251EF3DC0900E6718E /* Objects */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		ECCEC3841EF17E8E00E8DEA4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ECCEC3751EF17E6900E8DEA4 /* Main.storyboard */,
+				ECCEC37A1EF17E6900E8DEA4 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		ECCEC3851EF17EA100E8DEA4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ECFDA22E1EF3F8DB00E6718E /* image1.jpg */,
+				ECCEC3781EF17E6900E8DEA4 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		ECCEC3861EF17EAA00E8DEA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECCEC37D1EF17E6900E8DEA4 /* Info.plist */,
+				EC23621D1F0A69FD00E5A2E4 /* TestImages.swift */,
+				EC23621C1F0A69FD00E5A2E4 /* ApiKeys.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECCEC3871EF17EF100E8DEA4 /* Kairos */ = {
+			isa = PBXGroup;
+			children = (
+				ECFDA2231EF3D9EB00E6718E /* KairosAPI.swift */,
+				ECFDA22A1EF3E70D00E6718E /* KairosEmotionsFace.swift */,
+				EC58A7981EFEA3E40090F186 /* KairosRecognitionFace.swift */,
+				EC58A79E1F0062070090F186 /* KairosEmotions.swift */,
+				ECFDA22C1EF3E92700E6718E /* KairosTracking.swift */,
+			);
+			name = Kairos;
+			sourceTree = "<group>";
+		};
+		ECCEC3891EF17F0600E8DEA4 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				ECCEC3731EF17E6900E8DEA4 /* SelectionTableViewController.swift */,
+				ECCEC38A1EF180BA00E8DEA4 /* SelectionTableViewCell.swift */,
+				EC58A7A61F00FB640090F186 /* ImageURL.swift */,
+				EC2E84401EFC80AA006AD51C /* ApiDescription.swift */,
+			);
+			name = Selection;
+			sourceTree = "<group>";
+		};
+		ECFDA20E1EF2D8DF00E6718E /* SelectionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				ECFDA20F1EF2D8F700E6718E /* SelectionDetailsViewController.swift */,
+				EC5954CD1F02E1A600DD79B0 /* SelectionDetailsViewController+Timer.swift */,
+			);
+			name = SelectionDetails;
+			sourceTree = "<group>";
+		};
+		ECFDA2121EF2E1F000E6718E /* ResultsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				ECFDA2191EF2E28000E6718E /* ResultsDetailsTableViewController.swift */,
+				ECFDA2171EF2E27100E6718E /* ResultsDetailsTableViewCell.swift */,
+				ECD15B781F0332CA00469ADD /* ResultsDetailsTableViewController+CellConfiguration.swift */,
+			);
+			name = ResultsDetails;
+			sourceTree = "<group>";
+		};
+		ECFDA21B1EF3D2A100E6718E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC58A7A81F0106550090F186 /* AlamofireImage.framework */,
+				ECFDA21C1EF3D2D100E6718E /* Alamofire.framework */,
+				ECFDA21D1EF3D2D100E6718E /* Arrow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECFDA2251EF3DC0900E6718E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ECD15B6E1F03289F00469ADD /* TestResult.swift */,
+				ECD15B701F032E2700469ADD /* KairosRecognitionTestResult.swift */,
+				ECD15B711F032E2700469ADD /* FacePlusPlusTestResult.swift */,
+				ECD15B721F032E2700469ADD /* MicrosoftTestResult Kopie 4.swift */,
+				ECD15B731F032E2700469ADD /* KairosEmotionsTestResult.swift */,
+				ECFDA2261EF3DC3500E6718E /* Emotions.swift */,
+				ECFDA2281EF3E5CD00E6718E /* Person.swift */,
+				EC58A79A1EFEA5690090F186 /* Gender.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECCEC36D1EF17E6900E8DEA4 /* Face Detetion Evaluator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCEC3801EF17E6900E8DEA4 /* Build configuration list for PBXNativeTarget "Face Detetion Evaluator" */;
+			buildPhases = (
+				ECCEC36A1EF17E6900E8DEA4 /* Sources */,
+				ECCEC36B1EF17E6900E8DEA4 /* Frameworks */,
+				ECCEC36C1EF17E6900E8DEA4 /* Resources */,
+				ECFDA2221EF3D2D200E6718E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Face Detetion Evaluator";
+			productName = "Face Detetion Evaluator";
+			productReference = ECCEC36E1EF17E6900E8DEA4 /* Face Detetion Evaluator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECCEC3661EF17E6900E8DEA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Simon Back";
+				TargetAttributes = {
+					ECCEC36D1EF17E6900E8DEA4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VNVVY8QV7H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECCEC3691EF17E6900E8DEA4 /* Build configuration list for PBXProject "Face Detetion Evaluator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECCEC3651EF17E6900E8DEA4;
+			productRefGroup = ECCEC36F1EF17E6900E8DEA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECCEC36D1EF17E6900E8DEA4 /* Face Detetion Evaluator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECCEC36C1EF17E6900E8DEA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCEC37C1EF17E6900E8DEA4 /* LaunchScreen.storyboard in Resources */,
+				ECFDA22F1EF3F8DC00E6718E /* image1.jpg in Resources */,
+				ECCEC3791EF17E6900E8DEA4 /* Assets.xcassets in Resources */,
+				ECCEC3771EF17E6900E8DEA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECCEC36A1EF17E6900E8DEA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC58A7A11F0062B10090F186 /* MicrosoftEmotions.swift in Sources */,
+				EC23621F1F0A69FD00E5A2E4 /* TestImages.swift in Sources */,
+				EC2E84431EFD204B006AD51C /* MicrosoftFace.swift in Sources */,
+				ECFDA2271EF3DC3500E6718E /* Emotions.swift in Sources */,
+				EC58A79F1F0062070090F186 /* KairosEmotions.swift in Sources */,
+				EC58A7A71F00FB640090F186 /* ImageURL.swift in Sources */,
+				EC5954CE1F02E1A600DD79B0 /* SelectionDetailsViewController+Timer.swift in Sources */,
+				ECFDA22B1EF3E70D00E6718E /* KairosEmotionsFace.swift in Sources */,
+				ECCEC38B1EF180BA00E8DEA4 /* SelectionTableViewCell.swift in Sources */,
+				ECD15B6F1F03289F00469ADD /* TestResult.swift in Sources */,
+				ECFDA2291EF3E5CD00E6718E /* Person.swift in Sources */,
+				EC7B88291EF8926B00E86AF6 /* FacePlusPlusAPI.swift in Sources */,
+				ECCEC3741EF17E6900E8DEA4 /* SelectionTableViewController.swift in Sources */,
+				ECD15B761F032E2700469ADD /* MicrosoftTestResult Kopie 4.swift in Sources */,
+				EC23621E1F0A69FD00E5A2E4 /* ApiKeys.swift in Sources */,
+				ECFDA2181EF2E27100E6718E /* ResultsDetailsTableViewCell.swift in Sources */,
+				EC58A7A31F0063D10090F186 /* MicrosoftHairColor.swift in Sources */,
+				EC2E843F1EFC7874006AD51C /* MicrosoftFaceDetectionAPI.swift in Sources */,
+				ECFDA21A1EF2E28000E6718E /* ResultsDetailsTableViewController.swift in Sources */,
+				ECFDA2101EF2D8F700E6718E /* SelectionDetailsViewController.swift in Sources */,
+				ECD15B771F032E2700469ADD /* KairosEmotionsTestResult.swift in Sources */,
+				ECD15B751F032E2700469ADD /* FacePlusPlusTestResult.swift in Sources */,
+				EC58A7A51F0066D00090F186 /* MicrosoftAccessorie.swift in Sources */,
+				ECD15B791F0332CA00469ADD /* ResultsDetailsTableViewController+CellConfiguration.swift in Sources */,
+				ECD15B741F032E2700469ADD /* KairosRecognitionTestResult.swift in Sources */,
+				ECCEC3721EF17E6900E8DEA4 /* AppDelegate.swift in Sources */,
+				ECFDA22D1EF3E92700E6718E /* KairosTracking.swift in Sources */,
+				EC58A7991EFEA3E40090F186 /* KairosRecognitionFace.swift in Sources */,
+				ECFDA2241EF3D9EB00E6718E /* KairosAPI.swift in Sources */,
+				EC58A79B1EFEA5690090F186 /* Gender.swift in Sources */,
+				EC7B882B1EF8972E00E86AF6 /* FacePlusPlusFace.swift in Sources */,
+				EC2E84411EFC80AA006AD51C /* ApiDescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECCEC3751EF17E6900E8DEA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCEC3761EF17E6900E8DEA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECCEC37A1EF17E6900E8DEA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCEC37B1EF17E6900E8DEA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECCEC37E1EF17E6900E8DEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECCEC37F1EF17E6900E8DEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECCEC3811EF17E6900E8DEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNVVY8QV7H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Face Detetion Evaluator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.simon-back.Face-Detetion-Evaluator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ECCEC3821EF17E6900E8DEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNVVY8QV7H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Face Detetion Evaluator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.simon-back.Face-Detetion-Evaluator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECCEC3691EF17E6900E8DEA4 /* Build configuration list for PBXProject "Face Detetion Evaluator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCEC37E1EF17E6900E8DEA4 /* Debug */,
+				ECCEC37F1EF17E6900E8DEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECCEC3801EF17E6900E8DEA4 /* Build configuration list for PBXNativeTarget "Face Detetion Evaluator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCEC3811EF17E6900E8DEA4 /* Debug */,
+				ECCEC3821EF17E6900E8DEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECCEC3661EF17E6900E8DEA4 /* Project object */;
+}
